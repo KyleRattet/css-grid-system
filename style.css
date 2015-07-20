@@ -1,0 +1,86 @@
+#container {
+  width: 100%;
+  max-width: 1200px
+}
+
+#container*{
+  box-sizing: border-box;
+}
+
+/*.row:before,
+.row:after {
+      content:"";
+      display: table ;
+      clear:both;
+      border: dashed;
+      background-color: gray;
+  }*/
+.row {
+  background-color: gray;
+
+
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 8.33%;
+        /*-- our gutter --*/
+  padding: 12px;
+}
+
+.col-1{
+  width: 8.33%;
+}
+
+.col-4{
+  width: 33.33%;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-8 {
+  width: 66.64%;
+}
+
+
+/*.row {
+  content: "";
+  display: table;
+  clear:both;
+  width : 100%;
+  max-width: 1200px;
+  border: dashed;
+  background-color: gray;
+}*/
+
+.col-1{
+  width:8.33%;
+  border: solid;
+  background-color: white;
+}
+/*
+
+
+.col-4 {
+  float: left;
+  width:20%;
+  border: solid;
+  background-color: white;
+}
+
+.col-6 {
+  float: left;
+  border:solid;
+  background-color: white;
+  width:50%);
+}
+
+.col-8 {
+  float: right;
+  width:70%;
+  border: solid;
+  background-color: white;
+}*/
