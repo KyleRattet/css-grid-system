@@ -1,11 +1,12 @@
-#container {
+.container {
   width: 100%;
-  max-width: 1200px
-}
-
-#container*{
+  max-width: 1200px;
   box-sizing: border-box;
 }
+
+/*.container*{
+  box-sizing: border-box;
+}*/
 
 /*.row:before,
 .row:after {
@@ -15,35 +16,72 @@
       border: dashed;
       background-color: gray;
   }*/
-.row {
+
+.spacer { }
+
+.row1 {
   background-color: gray;
+  border: dashed;
+  }
 
-
+.row2 {
+  background-color: gray;
+  border: dashed;
+  height: 325px;
 }
 
-[class*='col-'] {
+.row3 {
+  background-color: gray;
+  border: dashed;
+  width: 60%;
+  float: right;
+  display: inline;
+
+    }
+
+.row4 {
+  background-color: gray;
+  border: dashed;
+  height:150px;
+}
+
+
+/*[class*='col-'] {
   float: left;
   min-height: 1px;
   width: 8.33%;
         /*-- our gutter --*/
-  padding: 12px;
-}
+ /* padding: 12px;
+  background-color: #FFDCDC;
+}*/*/
 
-.col-1{
-  width: 8.33%;
-}
+.col-1{ width: 4%;
+        display: inline;
+        background-color: red;
+      }
 
-.col-4{
-  width: 33.33%;
-}
 
-.col-6{
-  width: 50%;
-}
+.col-4{ width: 33.33%;
+        float: left;
+        height: 125px;
+        background-color: white;
+        }
 
-.col-8 {
-  width: 66.64%;
-}
+.col-8 {width: 65%;
+        float: right;
+        background-color: white;
+        height: 250px;
+        display: inline;
+        }
+
+.col-6{ width: 40%;
+        float: left;
+        background-color: white;
+        border: solid;
+        }
+
+ /*whats working*/
+
 
 
 /*.row {
@@ -56,14 +94,14 @@
   background-color: gray;
 }*/
 
-.col-1{
+/*.col-1{
   width:8.33%;
   border: solid;
   background-color: white;
 }
+/**/
+
 /*
-
-
 .col-4 {
   float: left;
   width:20%;
@@ -83,4 +121,4 @@
   width:70%;
   border: solid;
   background-color: white;
-}*/
+}*
